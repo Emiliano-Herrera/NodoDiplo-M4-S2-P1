@@ -1,0 +1,62 @@
+/* src/components/StarsBackground.css */
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+.stars-small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(2px 2px at 10px 10px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 20px 30px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 190px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 200px 250px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 300px 350px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 350px 450px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 400px 500px, #fff, rgba(0,0,0,0));
+  background-size: 500px 500px;
+  animation: moveStars 50s linear infinite;
+  opacity: 0.8;
+}
+
+.stars-medium {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(3px 3px at 50px 150px, #fff, rgba(0,0,0,0)),
+    radial-gradient(3px 3px at 100px 250px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 220px 420px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 320px 520px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 420px 620px, #fff, rgba(0,0,0,0));
+  background-size: 700px 700px;
+  animation: moveStars 70s linear infinite;
+  opacity: 0.6;
+}
+
+.stars-large {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(4px 4px at 180px 280px, #fff, rgba(0,0,0,0)),
+    radial-gradient(4px 4px at 380px 480px, #fff, rgba(0,0,0,0)),
+    radial-gradient(3px 3px at 580px 680px, #fff, rgba(0,0,0,0));
+  background-size: 900px 900px;
+  animation: moveStars 100s linear infinite;
+  opacity: 0.4;
+}
